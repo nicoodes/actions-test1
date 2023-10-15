@@ -2,7 +2,7 @@ name: run main.py
 
 on:
   schedule:
-    - cron: '*/10 * * * *'
+    - cron: '0 0 1 1 *' # At 12:00 AM, on day 1 of the month, only in January
 jobs:
   build:
     runs-on: ubuntu-latest
